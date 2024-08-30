@@ -37,6 +37,9 @@ config = "mixin.nostalgic_tweaks-required.json"
 [[mixins]]
 config = "mixin.nostalgic_tweaks-embeddium.json"
 
+[[mixins]]
+config = "mixin.nostalgic_tweaks-sodium.json"
+
 [[dependencies.nostalgic_tweaks]]
 modId = "neoforge"
 type = "required"

@@ -1,18 +1,21 @@
-package mod.adrenix.nostalgic.fabric.mixin;
+package mod.adrenix.nostalgic.neoforge.mixin;
 
-import net.fabricmc.loader.api.FabricLoader;
+import dev.architectury.platform.Platform;
+import net.neoforged.fml.loading.LoadingModList;
+import net.neoforged.fml.loading.moddiscovery.ModInfo;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 /**
  * Do <b color=red>not</b> class load any mod related classes here. Doing so will cause "applied too early" ASM errors
  * during the mixin application process.
  */
-public class MixinSodiumPlugin implements IMixinConfigPlugin
+public class MixinSodiumPluginNeoforge implements IMixinConfigPlugin
 {
     /**
      * {@inheritDoc}
@@ -37,7 +40,14 @@ public class MixinSodiumPlugin implements IMixinConfigPlugin
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName)
     {
-        return FabricLoader.getInstance().getModContainer("sodium").isPresent();
+        var sodiumInstalled = false;
+        for (ModInfo mod : LoadingModList.get().getMods()) {
+            if (!sodiumInstalled) {
+                sodiumInstalled = Objects.equals(mod.getModId(), "sodium");
+            }
+        }
+
+        return sodiumInstalled;
     }
 
     /**
