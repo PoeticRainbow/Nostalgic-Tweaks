@@ -186,6 +186,12 @@ public class ClientConfig implements ConfigMeta
         public ItemSet disableBlockOffsets = CandyTweak.DISABLE_BLOCK_OFFSETS.register("disableBlockOffsets");
         public boolean disableAllOffset = CandyTweak.DISABLE_ALL_OFFSET.register("disableAllOffset");
         public MissingTexture oldMissingTexture = CandyTweak.OLD_MISSING_TEXTURE.register("oldMissingTexture");
+        public boolean waterColorOverride = CandyTweak.WATER_COLOR_OVERRIDE.register("waterColorOverride");
+        public String waterColor = CandyTweak.WATER_COLOR.register("waterColor");
+        public boolean grassColorOverride = CandyTweak.GRASS_COLOR_OVERRIDE.register("grassColorOverride");
+        public String grassColor = CandyTweak.GRASS_COLOR.register("grassColor");
+        public boolean foliageColorOverride = CandyTweak.FOLIAGE_COLOR_OVERRIDE.register("foliageColorOverride");
+        public String foliageColor = CandyTweak.FOLIAGE_COLOR.register("foliageColor");
 
         // Hitbox Outline
 

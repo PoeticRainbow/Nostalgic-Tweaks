@@ -21,6 +21,7 @@ public interface CandyGroup
     Container BLOCK_CHEST = Container.group(BLOCK, "block_chest").color(0xFFB444).icon(Blocks.CHEST).build();
     Container BLOCK_TORCH = Container.group(BLOCK, "block_torch").color(0xFFD800).icon(Blocks.TORCH).build();
     Container BLOCK_BED = Container.group(BLOCK, "block_bed").color(0xFB4A4C).icon(Items.RED_BED).build();
+    Container BIOME_COLORS = Container.group(BLOCK, "biome_colors").color(0x3EA832).icon(Items.FILLED_MAP).build();
 
     // Interface
 

@@ -1,6 +1,8 @@
 package mod.adrenix.nostalgic.client;
 
 import mod.adrenix.nostalgic.NostalgicTweaks;
+import mod.adrenix.nostalgic.helper.candy.block.BiomeColorHelper;
+import mod.adrenix.nostalgic.mixin.tweak.candy.biome_color_overrides.BiomeColorMixin;
 import net.minecraft.client.Minecraft;
 
 import java.util.ArrayList;
@@ -83,6 +85,7 @@ public abstract class AfterConfigSave
         {
             reloadChunks = false;
             Minecraft.getInstance().levelRenderer.allChanged();
+            BiomeColorHelper.reloadColors();
         }
     }
 

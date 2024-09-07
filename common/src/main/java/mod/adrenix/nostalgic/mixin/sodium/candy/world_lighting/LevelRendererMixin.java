@@ -1,5 +1,6 @@
 package mod.adrenix.nostalgic.mixin.sodium.candy.world_lighting;
 
+import mod.adrenix.nostalgic.NostalgicTweaks;
 import net.caffeinemc.mods.sodium.client.render.SodiumWorldRenderer;
 import net.caffeinemc.mods.sodium.client.render.chunk.map.ChunkTracker;
 import net.caffeinemc.mods.sodium.client.render.chunk.map.ChunkTrackerHolder;

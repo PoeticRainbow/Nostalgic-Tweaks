@@ -30,6 +30,12 @@ public interface CandyTweak
     TweakItemSet AMBIENT_OCCLUSION_BLOCKS = TweakItemSet.client(DefaultListing.ambientOcclusion(), CandyGroup.BLOCK).newForUpdate().reloadChunks().build();
     TweakItemSet DISABLE_BLOCK_OFFSETS = TweakItemSet.client(DefaultListing.disabledOffsets(), CandyGroup.BLOCK).icon(TextureIcon.fromItem(Items.POPPY)).reloadChunks().build();
     TweakFlag DISABLE_ALL_OFFSET = TweakFlag.client(false, CandyGroup.BLOCK).reloadChunks().build();
+    TweakFlag WATER_COLOR_OVERRIDE = TweakFlag.client(false, CandyGroup.BIOME_COLORS).reloadChunks().build();
+    TweakColor WATER_COLOR = TweakColor.client("#FFFFFF", CandyGroup.BIOME_COLORS).reloadChunks().build();
+    TweakFlag GRASS_COLOR_OVERRIDE = TweakFlag.client(false, CandyGroup.BIOME_COLORS).reloadChunks().build();
+    TweakColor GRASS_COLOR = TweakColor.client("#FFFFFF", CandyGroup.BIOME_COLORS).reloadChunks().build();
+    TweakFlag FOLIAGE_COLOR_OVERRIDE = TweakFlag.client(false, CandyGroup.BIOME_COLORS).reloadChunks().build();
+    TweakColor FOLIAGE_COLOR = TweakColor.client("#FFFFFF", CandyGroup.BIOME_COLORS).reloadChunks().build();
 
     // Custom Hitbox
 

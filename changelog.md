@@ -1,5 +1,9 @@
 # Nostalgic Tweaks 1.21 (NeoForge/Fabric) Changelog
 
+## 2.0.0-beta.905
+
+This update is an UNOFFICIAL update to Sodium 0.6 on 1.21/1.21.1 by PoeticRainbow. Please bear with any bugs or issues as this codebase is new to me.
+
 ## 2.0.0-beta.904
 
 This update is a hotfix for a crash that occurs when using the latest version of the Fabric API. All users will need to
